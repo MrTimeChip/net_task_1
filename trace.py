@@ -24,7 +24,7 @@ def trace(ip):
     process = subprocess.Popen(["tracert", ip],
                                stdout=subprocess.PIPE,
                                stdin=subprocess.PIPE)
-    print(f'№\tIP\t\t\t\tASN\t\t\tinfo')
+    print(f'№\tIP\t\tASN\t\tinfo')
     while True:
         received = process.stdout.readline()
         if not received:
